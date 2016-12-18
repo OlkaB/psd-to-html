@@ -1,0 +1,209 @@
+/* FONTC
+main: font-family: 'Open Sans', sans-serif;
+	light 300
+	light 300 Italic
+	regular 400
+	regular 400 Italic
+	semi-bold 600
+	semi-bold 600 Italic
+	bold 700
+	bold 700 Italic
+	extra-bold 800
+	extra-bold 800 Italic
+*/
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container-fluid {
+	padding: 0;
+	margin: 0px;
+}
+
+article {
+	width: 100%;
+}
+
+.greyBlockPane {
+	background: url('images/greyStripes.jpg') repeat;
+	color: white;
+	text-align: center;
+	padding: 170px 0 170px 0;
+}
+
+p {
+	line-height: 130%;
+}
+
+h1 {
+	font-size: 2.25em;
+	font-weight: 700;
+}
+
+h2.greyBlock {
+	font-size: 3em;
+	font-weight: 700;
+}
+
+.greyBlockPane>p {
+	font-size: 1.5em;
+	line-height: 250%;
+}
+
+.wrapper {
+	width: 70%;
+	margin: auto;
+}
+
+h2.normal {
+	font-size: 1.875em;
+	font-weight: 700;
+}
+
+h2.normal+p{
+	font-size: 1.125em;
+	font-weight: 700;
+	margin: 18px 0 18px 0;
+}
+
+
+.bttnRed {
+	width: 145px;
+	height: 55px;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	color: white;
+	background-color: #ed4d4b;
+	position: relative;
+	font-size: 1.125em;
+}
+
+.bttnRed:active {
+	top: 1px;
+	left: 1px;
+	width: 144px;
+	height: 54px;
+}
+
+.flexContaninerRow {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+
+.flexVerticalMiddleRow {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/*  ----------------- HEADER ----------------- */
+header {
+	background-color: #0d0b11;
+	padding:10px;
+	color: white;
+}
+
+.navbar {
+	background-color: transparent;
+	border: none;
+}
+
+.container-fluid>.navbar-header {
+	margin: 0;
+}
+
+@media screen and (min-width:768px){
+	.navbar-collapse {
+		float: right;
+	}	
+}
+
+.navbar-default .navbar-nav>li>a {
+	border-top: 2px solid transparent;
+	transition: 1s;
+	font-size: 0.875em;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	border-top: 2px solid #ed4d4b;
+}
+
+header .flexContaninerRow {
+	padding-top: 50px;
+	padding-bottom: 25px;
+}
+
+.flexContaninerRow div {
+	margin-bottom: 25px;
+}
+
+header h1 {
+	margin: 0 0 40px 0;
+}
+
+header p {
+	font-size: 1.5em;
+	margin-bottom: 60px;
+}
+
+
+/* --------------------- MAIN --------------*/
+/* ----- services ----------*/
+.services {
+	background-color: #475a85;
+	color: white;
+	text-align: center;
+	padding: 6.25em 0 6.25em 0;
+}
+
+.imgContainer {
+	height: 65px;
+	max-width: 50px;
+	text-align: center;
+	margin: auto;
+}
+
+.imgContainer>.img {
+	width: 100%;
+	height: auto;
+}
+
+.imgContainer+p {
+	font-size: 1.125em;
+	font-weight: 700;
+}
+
+.hiddenTxt {
+	font-size: 0.875em;
+	font-weight: 400;
+	height: 55px;
+	max-width: 215px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.revealedTxt {
+	height: auto;
+	overflow: visible;
+}
+
+button.small {
+	width: 88px;
+	height: 33px;
+	font-size: 0.69em;
+}
+
+button.small:active{
+	width: 88px;
+	height: 33px;
+}
+
+/* ----- grey block ----------*/
