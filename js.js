@@ -1,3 +1,5 @@
+// ---------  ACCORDION ----------
+
 var getBttns = document.getElementsByClassName('revealTxtBttn');
 for (i = 0; i < getBttns.length; i++)  {
 	getBttns[i].addEventListener('click', revealFunc);
@@ -16,3 +18,7 @@ function revealFunc(){
 		bttnTxt.textContent = "More";
 	}
 }
+
+
+
+// ---------  PORTFOLIO ----------
