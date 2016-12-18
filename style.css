@@ -263,6 +263,7 @@ button.small {
 
 #filter>span {
 	color: #a7a7a7;
+	cursor: pointer;
 }
 
 #filter>span.active {
