@@ -106,7 +106,7 @@ h2.normal+p{
 
 .flexVerticalMiddleRow {
 	display: flex;
-	
+	align-items: center;
 }
 
 
@@ -357,4 +357,27 @@ figcaption>a>img {
 	font-size: 1.125em;
 	font-style: italic;
 	text-align: left;
+}
+
+.switch {
+	margin: auto;
+	width: 100px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+
+.diode {
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: #d3d3d3;
+	cursor: pointer;
+}
+
+.currentUse {
+	width: 12px;
+	height: 12px;
+	border-radius: 100%;
+	background-color: #ed4d4b;
 }
