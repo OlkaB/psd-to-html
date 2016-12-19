@@ -21,13 +21,11 @@ function revealFunc(){
 
 
 
-// ---------  PORTFOLIO ----------
+// ---------  PORTFOLIO FILTER ----------
 var portfolioPics = document.getElementsByClassName('filter');
 for (i=0; i<portfolioPics.length; i++){
 	portfolioPics[i].addEventListener('click', filterFunc);
 }
-
-console.log(portfolioPics);
 
 function filterFunc() {
 	if(this.id === "web"){
@@ -39,6 +37,7 @@ function filterFunc() {
 		for (i=0; i<elemToStyle.length; i++){
 			elemToStyle[i].style.display = 'initial';
 		}
+
 	}
 	else if (this.id === "print") {
 		var elemToStyle = document.getElementsByClassName('printTag');
@@ -58,6 +57,37 @@ function filterFunc() {
 		var elemToStyle = document.getElementsByClassName('webTag');
 		for (i=0; i<elemToStyle.length; i++){
 			elemToStyle[i].style.display = 'initial';
+		}
+	}
+}
+
+
+// ---------  CUSTOMERS' OPINION SWITCHER ----------
+var diodes = document.getElementsByClassName("bttn");
+
+for (i = 0; i < diodes.length; i++) {
+	diodes[i].addEventListener('click', diodeChange);
+}
+
+function diodeChange() {
+	this.className = this.className == 'bttn diode' ? 'bttn currentUse' : 'bttn diode';
+
+	var citeTxt = document.getElementById('textOutput');
+	switch (this.id) {
+		case "one":
+		citeTxt.textContent = "text one";
+		break;
+		case "two":
+		citeTxt.textContent = "text two";
+		break;
+		case "three":
+		citeTxt.textContent = "text three";
+		break;
+	}
+
+	for (j = 0; j < diodes.length; j++) {
+		if (diodes[j].id !== this.id) {
+			diodes[j].className = 'bttn diode';
 		}
 	}
 }

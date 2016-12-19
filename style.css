@@ -19,6 +19,7 @@ main: font-family: 'Open Sans', sans-serif;
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	color: #404040;
 }
 
 .container-fluid {
@@ -58,6 +59,7 @@ h2.greyBlock {
 
 .wrapper {
 	width: 70%;
+	max-width: 1200px;
 	margin: auto;
 }
 
@@ -96,11 +98,17 @@ h2.normal+p{
 	align-items: stretch;
 }
 
-.flexVerticalMiddleRow {
+.flexVerticalMiddleCol {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
+
+.flexVerticalMiddleRow {
+	display: flex;
+	
+}
+
 
 /*  ----------------- HEADER ----------------- */
 header {
@@ -146,6 +154,10 @@ header .flexContaninerRow {
 
 .flexContaninerRow div {
 	margin-bottom: 25px;
+}
+
+.flexContaninerRow img {
+	min-width: 200px;
 }
 
 header h1 {
@@ -316,3 +328,33 @@ figcaption>a>img {
 	cursor: pointer;
 }
 
+#gallery+p {
+	font-weight: 700;
+	font-size: 1.125em;
+	margin-top: 30px
+}
+
+#gallery+p+span {
+	font-size: 3.125em;
+}
+
+
+
+/* ----- customer opinion ----------*/
+.customerOpinion {
+	text-align: center;
+}
+
+#customerPic {
+	width: 70%;
+	min-width: 150px;
+	border-radius: 100%;
+	border: 6px solid #ebebeb;
+	background-color: #7b7b7b;
+}
+
+#cite {
+	font-size: 1.125em;
+	font-style: italic;
+	text-align: left;
+}
