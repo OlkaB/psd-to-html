@@ -107,6 +107,7 @@ h2.normal+p{
 .flexVerticalMiddleRow {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 
@@ -343,6 +344,7 @@ figcaption>a>img {
 /* ----- customer opinion ----------*/
 .customerOpinion {
 	text-align: center;
+	padding-bottom: 100px;
 }
 
 #customerPic {
@@ -351,6 +353,7 @@ figcaption>a>img {
 	border-radius: 100%;
 	border: 6px solid #ebebeb;
 	background-color: #7b7b7b;
+	margin: 20px;
 }
 
 #cite {
@@ -359,25 +362,41 @@ figcaption>a>img {
 	text-align: left;
 }
 
+#author {
+	font-size: 1.5em;
+	font-weight: 700;
+	text-align: left;
+	padding-top: 20px;
+}
+
 .switch {
 	margin: auto;
-	width: 100px;
+	width: 150px;
 	display: flex;
-	justify-content: space-between;
 	margin-top: 40px;
 }
 
 .diode {
-	width: 10px;
-	height: 10px;
-	border-radius: 5px;
-	background-color: #d3d3d3;
+	width: 23px;
+	height: 23px;
+	border-radius: 100%;
+	background-color: #7b7b7b;
+	margin: 0 6px 0 6px;
 	cursor: pointer;
 }
 
 .currentUse {
-	width: 12px;
-	height: 12px;
+	width: 23px;
+	height: 23px;
 	border-radius: 100%;
-	background-color: #ed4d4b;
+	background-color: #323232;
+	margin: 0 6px 0 6px;
+	cursor: pointer;
+}
+
+
+/* ----- map ----------*/
+#map {
+	width: 100%;
+	height: 500px;
 }

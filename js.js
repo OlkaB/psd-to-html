@@ -91,3 +91,16 @@ function diodeChange() {
 		}
 	}
 }
+
+
+// ---------  MAP ----------
+window.addEventListener('load', myMap);
+
+function myMap() {
+  var myCenter = new google.maps.LatLng(-8.249410364624302,112.76815445);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 8};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
