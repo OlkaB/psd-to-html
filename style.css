@@ -347,6 +347,15 @@ figcaption>a>img {
 	padding-bottom: 100px;
 }
 
+.customerOpinion .separator>.line {
+	border-color: black;
+}
+
+.customerOpinion .separator>.line::before,
+.customerOpinion .separator>.line::after {
+	background-color: black;
+}
+
 #customerPic {
 	width: 70%;
 	min-width: 150px;
@@ -399,4 +408,46 @@ figcaption>a>img {
 #map {
 	width: 100%;
 	height: 500px;
+}
+
+@media screen and (max-width:800px){
+#map {
+	width: 100%;
+	height: 50vh;
+}
+}
+
+/* ----- contact ----------*/
+.contact {
+	background-color: #475a85;
+	color: white;
+	text-align: center;
+	padding: 100px 0 100px 0;
+}
+
+input, textarea {
+	width: 100%;
+	border-radius: 3px;
+	border: none;
+}
+
+input {
+	height: 60px;
+}
+
+/* ----- credits ----------*/
+.credits {
+	background-color: #161828;
+	padding: 50px 0 50px 0;
+	text-align: center;
+}
+
+.credits>p {
+	font-size: 0.875em;
+	color: #76777f;
+}
+
+.credits>img {
+	margin: auto;
+	margin-top: 25px;
 }
