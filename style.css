@@ -58,7 +58,7 @@ h2.greyBlock {
 }
 
 .wrapper {
-	width: 70%;
+	width: 80%;
 	max-width: 1200px;
 	margin: auto;
 }
@@ -422,9 +422,80 @@ figcaption>a>img {
 	background-color: #475a85;
 	color: white;
 	text-align: center;
-	padding: 100px 0 100px 0;
+	padding: 100px 0 70px 0;
 }
 
+.contact .glyphicon{
+	margin-right: 15px;
+}
+
+.contactData p {
+	text-align: left;
+	color: #ffffff;
+	margin-bottom: 28px;
+}
+
+.contactData p:nth-of-type(1) {
+	font-weight: 700;
+}
+
+.contactData p:nth-of-type(2) {
+	margin-bottom: 33px;
+}
+
+.contactData p:last-of-type {
+	margin-bottom: 50px;
+}
+
+.contactData a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.contactData a:hover,
+.contactData .glyphicon {
+	color: #c0c0c0;
+}
+
+.socialPane {
+	width: auto;
+	text-align: left;
+	padding-left: 0;
+	padding-bottom: 30px;
+}
+
+.socialBttn {
+	width: 35px;
+	height: 35px;
+	border-radius: 100%;
+	background-color: #c0c0c0;
+	font-size: 1.125em;
+	text-align: center;
+	padding-top: 8.5px;
+	display: inline-block;
+}
+
+.socialBttn:nth-of-type(1),
+.socialBttn:nth-of-type(2) {
+	margin-right: 20px;
+}
+
+.socialBttn:active,
+.socialBttn:hover {
+	background-color: white;
+}
+
+.socialBttn:active {
+	top: 1px;
+	left: 1px;
+}
+
+.fa {
+	color: #475a85;
+}
+
+
+	/* - contact form - */
 input, textarea {
 	width: 100%;
 	border-radius: 3px;
@@ -433,6 +504,30 @@ input, textarea {
 
 input {
 	height: 60px;
+	padding-left: 15px;
+	color: black;
+}
+
+textarea {
+	padding-left: 15px;
+	padding-top: 15px;
+	color: black;
+}
+
+::-webkit-input-placeholder {
+  color: #747474;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #747474;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #747474;  
+}
+
+:-ms-input-placeholder {  
+  color: #747474;
 }
 
 /* ----- credits ----------*/
