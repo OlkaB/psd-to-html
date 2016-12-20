@@ -1,0 +1,5 @@
+- Odnoœniki z menu do sekcji
+- zmiana koloru aktywnego linku All/Web/Print
+- Browse All - append childs (po 6)
+- naprawiæ prze³¹czniki cytatów klientów
+- dodaæ animacjê p³ynnego przechodzenia do sekcji strony

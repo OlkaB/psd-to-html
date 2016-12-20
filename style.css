@@ -119,7 +119,7 @@ header {
 }
 
 .navbar {
-	background-color: transparent;
+	background-color: #0d0b11;
 	border: none;
 }
 
@@ -134,7 +134,7 @@ header {
 }
 @media screen and (max-width:450px){
 .navbar-brand {
-	width: 150px;
+	width: 140px;
 }
 }
 
@@ -149,7 +149,7 @@ header {
 }
 
 header .flexContaninerRow {
-	padding-top: 50px;
+	padding-top: 100px;
 	padding-bottom: 25px;
 }
 
@@ -173,7 +173,7 @@ header p {
 
 /* --------------------- MAIN --------------*/
 /* ----- services ----------*/
-.services {
+#services {
 	background-color: #475a85;
 	color: white;
 	text-align: center;
@@ -255,17 +255,17 @@ button.small {
 
 
 /* ----- portfolio ----------*/
-.portfolio {
+#portfolio {
 	text-align: center;
-	padding: 80px 0 80px 0;
+	padding: 80px 0 10px 0;
 }
 
-.portfolio .separator>.line {
+#portfolio .separator>.line {
 	border-color: black;
 }
 
-.portfolio .separator>.line::before,
-.portfolio .separator>.line::after {
+#portfolio .separator>.line::before,
+#portfolio .separator>.line::after {
 	background-color: black;
 }
 
@@ -283,21 +283,21 @@ button.small {
 	color: #323232;
 }
 
-.portfolio figure {
+#portfolio figure {
 	position: relative;
 	text-align: center;
 	margin-bottom: 35px;
 }
 
-.portfolio figure>img {
+#portfolio figure>img {
 	z-index: -2;
 }
 
-.portfolio figure>img {
+#portfolio figure>img {
 	filter: hue-rotate(90deg); /*this is only exemplary effect*/
 }
 
-.portfolio figcaption {
+#portfolio figcaption {
 	max-width: 365px;
 	position: absolute;
 	z-index: 2;
@@ -342,17 +342,18 @@ figcaption>a>img {
 
 
 /* ----- customer opinion ----------*/
-.customerOpinion {
+#customerOpinion {
 	text-align: center;
 	padding-bottom: 100px;
+	padding-top: 70px;
 }
 
-.customerOpinion .separator>.line {
+#customerOpinion .separator>.line {
 	border-color: black;
 }
 
-.customerOpinion .separator>.line::before,
-.customerOpinion .separator>.line::after {
+#customerOpinion .separator>.line::before,
+#customerOpinion .separator>.line::after {
 	background-color: black;
 }
 
@@ -418,14 +419,14 @@ figcaption>a>img {
 }
 
 /* ----- contact ----------*/
-.contact {
+#contact {
 	background-color: #475a85;
 	color: white;
 	text-align: center;
 	padding: 100px 0 70px 0;
 }
 
-.contact .glyphicon{
+#contact .glyphicon{
 	margin-right: 15px;
 }
 
@@ -530,6 +531,34 @@ textarea {
   color: #747474;
 }
 
+.upBttn {
+	float: right;
+	width: 57px;
+	height: 57px;
+	border-radius: 3px;
+	background-color: #c2c2c2;
+	cursor: pointer;
+	position: relative;
+}
+
+.upBttn:active {
+	top: 1px;
+	right: 1px;
+}
+
+.upBttn>.fa-angle-up {
+	color: #929292;
+	font-weight: bold;
+	font-size: 3.5em;
+}
+
+.upBttn:active>.fa-angle-up,
+.upBttn:hover>.fa-angle-up {
+	color: #475a85;
+}
+
+
+
 /* ----- credits ----------*/
 .credits {
 	background-color: #161828;
@@ -546,3 +575,4 @@ textarea {
 	margin: auto;
 	margin-top: 25px;
 }
+
