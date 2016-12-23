@@ -88,16 +88,15 @@ function porftolioFunc(){
 document.getElementById("browseMore").addEventListener("click", browseMoreFunc);
 
 function browseMoreFunc(){
-	var galleryItm = document.getElementById("gallery");
-	var itemToClone = galleryItm.getElementsByTagName('figure')[0];
-	var cloned = itemToClone.cloneNode(true);
-	var iLoop = 6;
-	for (iLoop; iLoop<iLoop+6; iLoop++){
+	for (i=0; i<6; i++){
+		var galleryItm = document.getElementById("gallery");
+		var itemToClone = galleryItm.getElementsByTagName('figure')[0];
+		var cloned = itemToClone.cloneNode(true);
 		galleryItm.appendChild(cloned);
-		console.log(i);
+		
 	}
 }
-
+		//to do  gallery: create object of single Items and append childs with object's items
 
 
 

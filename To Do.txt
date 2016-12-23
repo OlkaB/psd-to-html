@@ -1,2 +1,2 @@
-- Browse All - append childs (po 6)
+- gallery: create object of single Items and append childs with object's items
 - dodaæ animacjê p³ynnego przechodzenia do sekcji strony
