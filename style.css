@@ -335,8 +335,22 @@ figcaption>a>img {
 	margin-top: 30px
 }
 
-#gallery+p+span {
+#browseMore {
 	font-size: 3.125em;
+	cursor: pointer;
+}
+
+#browseMore:hover {
+	animation: move 2s infinite;
+}
+
+@keyframes move {
+  0% {transform: scale( 1 );}
+  14% {transform: scale( 1 );}
+  24% {transform: scale( 1.2 );}
+  30% {transform: scale( 1 );}
+  40% {transform: scale( 1.2 );}
+  46% {transform: scale( 1 );}
 }
 
 
