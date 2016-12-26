@@ -1,2 +1,3 @@
 - clean css
+- add local font awesome (prevent problems with icons upload)
 - minify css&js
